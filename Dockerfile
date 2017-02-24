@@ -1,4 +1,4 @@
-FROM elasticsearch:1.7.6
+FROM elasticsearch:1.7.6-alpine
 
 RUN cat /etc/init.d/elasticsearch
 
