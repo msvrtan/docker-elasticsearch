@@ -1,7 +1,5 @@
 FROM elasticsearch:1.7.6-alpine
 
-RUN cat /etc/init.d/elasticsearch
-
 RUN echo script.groovy.sandbox.enabled: true >> /etc/elasticsearch/elasticsearch.yml
 RUN echo script.engine.groovy.inline.aggs: on >> /etc/elasticsearch/elasticsearch.yml
 RUN echo script.engine.groovy.inline.search: on >> /etc/elasticsearch/elasticsearch.yml
