@@ -1,4 +1,4 @@
-FROM elasticsearch:1.7
+FROM elasticsearch:1.7.6
 
 RUN cat /etc/init.d/elasticsearch
 
