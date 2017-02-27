@@ -1,5 +1,9 @@
 FROM elasticsearch:1.7
 
+RUN echo script.inline: true >> /etc/elasticsearch/elasticsearch.yml
+RUN echo script.stored: true >> /etc/elasticsearch/elasticsearch.yml
+
+
 RUN echo script.engine.groovy.inline.aggs: on >> /etc/elasticsearch/elasticsearch.yml
 RUN echo script.engine.groovy.inline.search: on >> /etc/elasticsearch/elasticsearch.yml
 RUN echo script.engine.groovy.inline.update: on >> /etc/elasticsearch/elasticsearch.yml
